@@ -2,6 +2,7 @@
 Name: Mengly Lim
 Course: COMP 4610 GUI I
 Assignment: HW4 - Dynamic Multiplication Table with jQuery Validation
+No external sources used
 */
 
 $(document).ready(function () {
