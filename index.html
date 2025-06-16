@@ -1,0 +1,48 @@
+<!--
+Name: Mengly Lim
+Course: COMP 4610 GUI I
+Assignment: HW4 - Dynamic Multiplication Table with jQuery Validation
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynamic Multiplication Table</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- jQuery Validation Plugin -->
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Multiplication Table Generator (HW4)</h1>
+
+    <form id="mult-form" novalidate>
+      <label for="startCol">Start Column:</label>
+      <input type="text" id="startCol" name="startCol" />
+
+      <label for="endCol">End Column:</label>
+      <input type="text" id="endCol" name="endCol" />
+
+      <label for="startRow">Start Row:</label>
+      <input type="text" id="startRow" name="startRow" />
+
+      <label for="endRow">End Row:</label>
+      <input type="text" id="endRow" name="endRow" />
+
+      <button type="submit">Generate Table</button>
+      <button type="button" onclick="clearTable()">Clear Table</button>
+    </form>
+
+    <div id="error-message"></div>
+    <div id="table-container"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

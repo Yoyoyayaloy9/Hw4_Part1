@@ -1,0 +1,83 @@
+/*
+Name: Mengly Lim
+Course: COMP 4610 GUI I
+Assignment: HW4 - Dynamic Multiplication Table with jQuery Validation
+Description: CSS for layout, styling, and scrollable table with fixed headers.
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input.error {
+    border: 2px solid red;
+  }
+  
+  label.error {
+    color: red;
+    font-size: 0.9em;
+    grid-column: span 2;
+  }
+  
+  #table-container {
+    overflow: auto;
+    max-height: 400px;
+    border: 1px solid #ccc;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  th, td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    position: sticky;
+    top: 0;
+    background: #f9f9f9;
+    z-index: 1;
+  }
+  
+  td:first-child, th:first-child {
+    position: sticky;
+    left: 0;
+    background: #f9f9f9;
+    z-index: 1;
+  }
+  
+  #error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #f2f2f2;
+  }
